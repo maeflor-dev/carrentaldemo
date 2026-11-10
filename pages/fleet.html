@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <title>Our Fleet | Roadmate Car Rental</title>
+  <meta name="description" content="Browse our wide selection of sedans, SUVs, vans, and pickups available for rent in Cebu City.">
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+      <!-- Icon tab-->                                    
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icontabs/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icontabs/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icontabs/favicon-16x16.png">
+    <link rel="manifest" href="/assets/icontabs/site.webmanifest">
+</head>
+<body>
+
+  <div class="demo-watermark" aria-hidden="true">DEMO</div>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/index.html" class="logo">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9L18 10l-2.5-4.5c-.4-.7-1.1-1.5-2-1.5H8.5c-.9 0-1.6.8-2 1.5L4 10l-2.5 1.1C.7 12.3 0 13.1 0 14v3c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg>
+        Roadmate<span>.</span>
+      </a>
+      <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+      <nav id="primary-nav" class="main-nav">
+        <ul class="nav-list">
+          <li><a href="/index.html" class="nav-link">Home</a></li>
+          <li><a href="/pages/fleet.html" class="nav-link">Fleet</a></li>
+          <li><a href="/pages/services.html" class="nav-link">Services</a></li>
+          <li><a href="/pages/pricing.html" class="nav-link">Pricing</a></li>
+          <li><a href="/pages/about.html" class="nav-link">About</a></li>
+          <li><a href="/pages/locations.html" class="nav-link">Locations</a></li>
+          <li><a href="/pages/blog.html" class="nav-link">Blog</a></li>
+          <li><a href="/pages/faq.html" class="nav-link">FAQ</a></li>
+          <li><a href="/pages/contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <a href="/pages/booking.html" class="btn">Book Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section style="background-color: var(--color-bg-light); padding: 40px 0;">
+      <div class="container">
+        <h1>Our Vehicle Fleet</h1>
+        <p>Choose from our meticulously maintained selection of cars, SUVs, vans, and pickups.</p>
+        
+        <!-- Filter and Sort Controls -->
+        <div style="display: flex; gap: 20px; margin-top: 30px; flex-wrap: wrap;">
+          <div class="form-group" style="flex: 1; min-width: 220px;">
+            <label for="filter-type">Filter by Vehicle Type</label>
+            <select id="filter-type" class="form-control">
+              <option value="all">All Vehicles</option>
+              <option value="compact">Compact Hatchback</option>
+              <option value="sedan">Sedan</option>
+              <option value="suv">SUV</option>
+              <option value="van">Van</option>
+              <option value="pickup">Pickup Truck</option>
+              <option value="luxury">Executive / Luxury</option>
+            </select>
+          </div>
+          <div class="form-group" style="flex: 1; min-width: 220px;">
+            <label for="sort-price">Sort by Price</label>
+            <select id="sort-price" class="form-control">
+              <option value="default">Featured / Default</option>
+              <option value="low-high">Price: Low to High</option>
+              <option value="high-low">Price: High to Low</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fleet Grid -->
+    <section>
+      <div class="container">
+        <div id="fleet-grid" class="grid-3">
+          <!-- Dynamically populated from script.js -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3 class="logo" style="color: var(--color-white); margin-bottom: 15px;">Roadmate<span>.</span></h3>
+          <p style="color: var(--color-bg-light);">Your Ride, Ready When You Are. Reliable car rentals across Cebu City, Philippines.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="/pages/fleet.html">Our Fleet</a></li>
+            <li><a href="/pages/services.html">Services</a></li>
+            <li><a href="/pages/pricing.html">Pricing Rates</a></li>
+            <li><a href="/pages/locations.html">Locations</a></li>
+            <li><a href="/pages/careers.html">Careers</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Support & Legal</h4>
+          <ul>
+            <li><a href="/pages/faq.html">FAQ</a></li>
+            <li><a href="/pages/contact.html">Contact Us</a></li>
+            <li><a href="/pages/terms.html">Terms of Service</a></li>
+            <li><a href="pages/privacy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Branch Office</h4>
+          <p style="color: var(--color-bg-light);">Cebu IT Park, Apas, Cebu City<br>Phone: +63 (32) 555-0199<br>Email: hello@roadmate.example</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+          <p> © 2026 Roadmate Car Rental. All rights reserved.
+        <p>Photos from Unsplash. Designed and built by Mae Flor Alivio.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/script.js"></script>
+</body>
+</html>

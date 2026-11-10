@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <title>Book a Car | Roadmate Car Rental</title>
+  <meta name="description" content="Secure your car rental in Cebu City through our simple 4-step booking simulation.">
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+       <!-- Icon tab-->                                    
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icontabs/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icontabs/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icontabs/favicon-16x16.png">
+    <link rel="manifest" href="/assets/icontabs/site.webmanifest">
+</head>
+<body>
+
+  <div class="demo-watermark" aria-hidden="true">DEMO</div>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/index.html" class="logo">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9L18 10l-2.5-4.5c-.4-.7-1.1-1.5-2-1.5H8.5c-.9 0-1.6.8-2 1.5L4 10l-2.5 1.1C.7 12.3 0 13.1 0 14v3c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg>
+        Roadmate<span>.</span>
+      </a>
+      <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+      <nav id="primary-nav" class="main-nav">
+        <ul class="nav-list">
+          <li><a href="/index.html" class="nav-link">Home</a></li>
+          <li><a href="/pages/fleet.html" class="nav-link">Fleet</a></li>
+          <li><a href="/pages/services.html" class="nav-link">Services</a></li>
+          <li><a href="/pages/pricing.html" class="nav-link">Pricing</a></li>
+          <li><a href="/pages/about.html" class="nav-link">About</a></li>
+          <li><a href="/pages/locations.html" class="nav-link">Locations</a></li>
+          <li><a href="/pages/blog.html" class="nav-link">Blog</a></li>
+          <li><a href="/pages/faq.html" class="nav-link">FAQ</a></li>
+          <li><a href="/pages/contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <a href="/pages/booking.html" class="btn active">Book Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section style="background-color: var(--color-bg-light); padding: 40px 0;">
+      <div class="container">
+        <h1>Online Booking Simulation</h1>
+        <p>Complete the steps below to reserve your vehicle.</p>
+        
+        <!-- Progress Indicator -->
+        <div class="booking-progress" role="group" aria-label="Booking progress">
+          <div class="booking-progress__road" aria-hidden="true">
+            <div class="booking-progress__fill"></div>
+            <svg class="booking-progress__car" viewBox="0 0 48 28" aria-hidden="true">
+              <path d="M7 17.5 10.2 9a3 3 0 0 1 2.8-2h17a4 4 0 0 1 3.2 1.6l5.2 7.1 3.1 1.1a2.2 2.2 0 0 1 1.5 2.1V22h-3.8a5.2 5.2 0 0 1-10.2 0h-9.6a5.2 5.2 0 0 1-10.2 0H6v-2.1a2.4 2.4 0 0 1 1-2.4Z" fill="currentColor"/>
+              <path d="m12 9.5-2.1 6h24l-4.1-5.7a2.3 2.3 0 0 0-1.9-.9H13.4a1.5 1.5 0 0 0-1.4.6Z" fill="#1A1A1A"/>
+              <circle cx="14.3" cy="21.5" r="2.5" fill="#1A1A1A"/>
+              <circle cx="34" cy="21.5" r="2.5" fill="#1A1A1A"/>
+            </svg>
+          </div>
+          <div class="booking-progress__steps">
+            <div id="indicator-1" class="booking-progress__step is-current" aria-current="step">1. Dates &amp; Location</div>
+            <div id="indicator-2" class="booking-progress__step">2. Choose Car</div>
+            <div id="indicator-3" class="booking-progress__step">3. Driver Details</div>
+            <div id="indicator-4" class="booking-progress__step">4. Summary</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container" style="max-width: 800px;">
+        <form id="booking-form" class="card" style="padding: 30px;">
+          
+          <!-- Step 1 -->
+          <div id="step-1">
+            <h3 style="margin-bottom: 20px;">Step 1: Pick-up Location & Dates</h3>
+            <div class="form-group" style="margin-bottom: 20px;">
+              <label for="book-location">Pick-up Location</label>
+              <select id="book-location" class="form-control" required>
+                <option value="">Select branch</option>
+                <option value="mactan-airport">Mactan-Cebu International Airport</option>
+                <option value="cebu-it-park">Cebu IT Park Hub</option>
+                <option value="mandaue-main">Mandaue Main Branch</option>
+              </select>
+            </div>
+            <div class="form-group" style="margin-bottom: 20px;">
+              <label for="book-pickup-date">Pick-up Date & Time</label>
+              <input type="datetime-local" id="book-pickup-date" class="form-control" required onchange="updateBookingSummary()">
+            </div>
+            <div class="form-group" style="margin-bottom: 30px;">
+              <label for="book-return-date">Return Date & Time</label>
+              <input type="datetime-local" id="book-return-date" class="form-control" required onchange="updateBookingSummary()">
+            </div>
+            <button type="button" class="btn" onclick="nextStep(2)">Next: Choose Car &rarr;</button>
+          </div>
+
+          <!-- Step 2 -->
+          <div id="step-2" style="display: none;">
+            <h3 style="margin-bottom: 20px;">Step 2: Select Your Vehicle</h3>
+            <div class="form-group" style="margin-bottom: 30px;">
+              <label for="booking-car">Available Vehicles</label>
+              <select id="booking-car" class="form-control" required>
+                <!-- Populated by script.js -->
+              </select>
+            </div>
+            <div style="display: flex; gap: 15px;">
+              <button type="button" class="btn btn-secondary" onclick="prevStep(1)">&larr; Back</button>
+              <button type="button" class="btn" onclick="nextStep(3)">Next: Driver Details &rarr;</button>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div id="step-3" style="display: none;">
+            <h3 style="margin-bottom: 20px;">Step 3: Primary Driver Information</h3>
+            <div class="form-group" style="margin-bottom: 15px;">
+              <label for="driver-name">Full Name</label>
+              <input type="text" id="driver-name" class="form-control" required placeholder="Juan Dela Cruz">
+            </div>
+            <div class="form-group" style="margin-bottom: 15px;">
+              <label for="driver-email">Email Address</label>
+              <input type="email" id="driver-email" class="form-control" required placeholder="juan@example.com">
+            </div>
+            <div class="form-group" style="margin-bottom: 15px;">
+              <label for="driver-phone">Mobile Number</label>
+              <input type="tel" id="driver-phone" class="form-control" required placeholder="+63 912 345 6789">
+            </div>
+            <div class="form-group" style="margin-bottom: 30px;">
+              <label for="driver-license">Driver's License Number</label>
+              <input type="text" id="driver-license" class="form-control" required placeholder="N01-23-456789">
+            </div>
+            <div style="display: flex; gap: 15px;">
+              <button type="button" class="btn btn-secondary" onclick="prevStep(2)">&larr; Back</button>
+              <button type="button" class="btn" onclick="nextStep(4)">Next: Summary &rarr;</button>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div id="step-4" style="display: none;">
+            <h3 style="margin-bottom: 20px;">Step 4: Booking Summary</h3>
+            <div style="background: var(--color-bg-light); padding: 20px; border-radius: 6px; margin-bottom: 30px;">
+              <p style="margin-bottom: 10px;"><strong>Selected Vehicle:</strong> <span id="sum-car">-</span></p>
+              <p style="margin-bottom: 10px;"><strong>Rental Period:</strong> <span id="sum-dates">-</span></p>
+              <p style="margin-bottom: 0; font-weight: 700; color: var(--color-accent-strong);">Estimated Total: <span id="sum-total">-</span></p>
+            </div>
+            <div style="display: flex; gap: 15px;">
+              <button type="button" class="btn btn-secondary" onclick="prevStep(3)">&larr; Back</button>
+              <button type="submit" class="btn">Confirm & Submit Reservation</button>
+            </div>
+          </div>
+
+        </form>
+
+        <!-- Confirmation Screen (Hidden Initially) -->
+        <div id="booking-confirmation" class="card" style="padding: 40px; text-align: center; display: none;">
+          <h2 style="color: var(--color-success); margin-bottom: 15px;">Booking Confirmed!</h2>
+          <p style="margin-bottom: 20px;">Thank you for reserving with Roadmate Car Rental. Your reservation reference code is:</p>
+          <div style="font-size: 2rem; font-weight: 800; color: var(--color-primary); background: var(--color-bg-light); padding: 15px; border-radius: 6px; display: inline-block; margin-bottom: 30px;" id="ref-code">RM-999999</div>
+          <p style="color: var(--color-text-light); margin-bottom: 30px;">A confirmation email with pickup instructions has been dispatched. (Demo simulation only — no data was transmitted).</p>
+          <div>
+            <a href="/index.html" class="btn">Return to Home</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3 class="logo" style="color: var(--color-white); margin-bottom: 15px;">Roadmate<span>.</span></h3>
+          <p style="color: var(--color-bg-light);">Your Ride, Ready When You Are. Reliable car rentals across Cebu City, Philippines.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="/pages/fleet.html">Our Fleet</a></li>
+            <li><a href="/pages/services.html">Services</a></li>
+            <li><a href="/pages/pricing.html">Pricing Rates</a></li>
+            <li><a href="/pages/locations.html">Locations</a></li>
+             <li><a href="/pages/careers.html">Careers</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Support & Legal</h4>
+          <ul>
+            <li><a href="/pages/faq.html">FAQ</a></li>
+            <li><a href="/pages/contact.html">Contact Us</a></li>
+            <li><a href="/pages/terms.html">Terms of Service</a></li>
+            <li><a href="/pages/privacy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Branch Office</h4>
+          <p style="color: var(--color-bg-light);">Cebu IT Park, Apas, Cebu City<br>Phone: +63 (32) 555-0199<br>Email: hello@roadmate.example</p>
+        </div>
+      </div>
+       <div class="footer-bottom">
+          <p> © 2026 Roadmate Car Rental. All rights reserved.
+        <p>Photos from Unsplash. Designed and built by Mae Flor Alivio.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/script.js"></script>
+</body>
+</html>
